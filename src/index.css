@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-amiri: "Amiri", serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-brand-background: #FDFBF7;
+  --color-brand-accent: #B48E4B;
+  --color-stone-900: #1C1917;
+  --color-stone-500: #78716C;
+  --color-stone-100: #F5F5f4;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-background text-stone-900 font-inter antialiased;
+    overflow: hidden;
+    height: 100dvh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/90 border-t border-stone-100;
+  }
+
+  .rtl {
+    direction: rtl;
+  }
+}
