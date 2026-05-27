@@ -41,7 +41,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-white">
+    <div className="flex h-screen w-full overflow-hidden bg-white relative pt-1">
+      {/* Premium Top Gold Accent Bar */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-brand-accent z-[100]" />
+
       {/* Sidebar - Desktop Only */}
       <div className="hidden md:block border-r border-stone-100 h-full">
         <Sidebar />
@@ -78,7 +81,7 @@ export default function App() {
                   className="flex flex-col items-center"
                 >
                   <h1 className="text-4xl md:text-7xl font-playfair text-stone-900 mb-6 drop-shadow-sm tracking-tight text-center">
-                    Nagma-e-Huda
+                    Tafseel03
                   </h1>
 
                   {/* Motivational Quotes */}

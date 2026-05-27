@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import { useHadithStore } from '@/stores/useHadithStore';
 import { useAppStore } from '@/stores/useAppStore';
 import { ArrowLeft, Search, Loader2 } from 'lucide-react';
-import { useTranslationStore } from '@/stores/useTranslationStore'; // might need to show translation option or just default to english
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 

@@ -100,8 +100,13 @@ export const PlayerBar = () => {
             </div>
 
             <div className="relative z-10 flex flex-col h-full bg-gradient-to-b from-black/5 to-white/95">
+              {/* Grab Handle Bar */}
+              <div className="flex justify-center pt-4">
+                <div className="w-12 h-1 bg-brand-accent rounded-full opacity-80" />
+              </div>
+
               {/* Header */}
-              <div className="flex items-center justify-between p-6 pb-2">
+              <div className="flex items-center justify-between p-6 pb-2 pt-2">
                 <button 
                   onClick={() => setIsExpanded(false)}
                   className="w-10 h-10 flex items-center justify-center text-stone-600 active:scale-95 transition-transform"
@@ -157,7 +162,7 @@ export const PlayerBar = () => {
                     onValueChange={handleProgressChange}
                   >
                     <Slider.Track className="bg-stone-200/60 relative grow rounded-full h-1.5 overflow-hidden transition-all group-active:h-2.5">
-                      <Slider.Range className="absolute bg-stone-900 rounded-full h-full" />
+                      <Slider.Range className="absolute bg-brand-accent rounded-full h-full" />
                     </Slider.Track>
                     <Slider.Thumb className="hidden group-active:block w-4 h-4 bg-white border border-stone-200 shadow-md rounded-full outline-none" />
                   </Slider.Root>

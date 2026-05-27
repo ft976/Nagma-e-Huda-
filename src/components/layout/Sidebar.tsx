@@ -109,9 +109,9 @@ export const Sidebar = () => {
         >
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-brand-accent/10 rounded-xl flex items-center justify-center text-brand-accent">
-              <span className="font-playfair text-2xl font-bold text-brand-accent">NH</span>
+              <span className="font-playfair text-xl font-bold text-brand-accent">T03</span>
             </div>
-            <h1 className="font-playfair text-xl font-bold text-stone-900">Nagma-e-Huda</h1>
+            <h1 className="font-playfair text-xl font-bold text-stone-900">Tafseel03</h1>
           </div>
         </button>
 
